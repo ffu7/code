@@ -1,0 +1,6 @@
+http://www.ffu.com/search.php
+http://www.ffu.com/db01.zip
+http://www.ffu.com/user_info.php?user_id=2
+http://www.ffu.com/ping_domain.php
+http://www.ffu.com/admin
+http://www.ffu.com/user_login.php

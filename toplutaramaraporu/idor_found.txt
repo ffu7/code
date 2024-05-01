@@ -1,0 +1,2 @@
+Possbile IDOR at URL : http://www.ffu.com/user_info.php?user_id=1 
+Possbile IDOR at URL : http://www.ffu.com/user_info.php?user_id=2 

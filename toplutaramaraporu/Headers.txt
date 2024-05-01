@@ -1,0 +1,21 @@
+- Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4-HTTP methods: OPTIONS,HEAD,GET,POST,TRACE
+- Content-Security-Policy header missing (Potential XSS vulnerability)
+- X-Frame-Options header missing (Clickjacking vulnerability)
+- X-XSS-Protection header missing (Potential XSS vulnerability)
+- Server header found: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 (May reveal server details)
+- Strict-Transport-Security header missing (HTTP to HTTPS downgrade vulnerability)
+- X-Content-Type-Options header missing (MIME sniffing vulnerability)
+- Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4-HTTP methods: OPTIONS,HEAD,GET,POST,TRACE
+- Content-Security-Policy header missing (Potential XSS vulnerability)
+- X-Frame-Options header missing (Clickjacking vulnerability)
+- X-XSS-Protection header missing (Potential XSS vulnerability)
+- Server header found: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 (May reveal server details)
+- Strict-Transport-Security header missing (HTTP to HTTPS downgrade vulnerability)
+- X-Content-Type-Options header missing (MIME sniffing vulnerability)
+- Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4-HTTP methods: OPTIONS,HEAD,GET,POST,TRACE
+- Content-Security-Policy header missing (Potential XSS vulnerability)
+- X-Frame-Options header missing (Clickjacking vulnerability)
+- X-XSS-Protection header missing (Potential XSS vulnerability)
+- Server header found: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 (May reveal server details)
+- Strict-Transport-Security header missing (HTTP to HTTPS downgrade vulnerability)
+- X-Content-Type-Options header missing (MIME sniffing vulnerability)

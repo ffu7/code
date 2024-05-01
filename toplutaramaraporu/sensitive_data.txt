@@ -1,0 +1,9 @@
+Possible backup file found at http://www.ffu.com/db01.zip data: .zip
+Potential information leakage detected! Keyword : password:
+ found. At http://www.ffu.com/user_login.php : b'        <label for="password">Password:</label>':
+Potential information leakage detected! Keyword : password=
+ found. At http://www.ffu.com/user_login.php : b'        <!-- password=12345 -->':
+Potential information leakage detected! Keyword : api_key
+ found. At http://www.ffu.com/user_login.php : b'        <!-- API_KEY=AROAQAZWSX -->':
+Potential information leakage detected! Keyword : user=
+ found. At http://www.ffu.com/user_login.php : b'\t\t<!-- connection:user=sa;password=yeditepe;db=grades TCKN:821111111-->':
