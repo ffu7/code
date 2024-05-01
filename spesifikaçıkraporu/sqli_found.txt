@@ -1,0 +1,4 @@
+url: http://ffu.com/user_login.php
+form_details: {'action': '', 'method': 'post', 'inputs': [{'type': 'text', 'name': 'username', 'value': ';'}, {'type': 'password', 'name': 'password'}, {'type': 'checkbox', 'name': 'remember'}]}
+payload: < ; >
+----------------------------
